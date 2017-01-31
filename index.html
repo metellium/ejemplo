@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Practica1</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mystilo.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function (){
+		//alert ("hola mundo");		
+
+		$("#btnSumar").click(function (){
+		var n1=parseInt($("#num1").val());
+		var n2=parseInt($("#num2").val());
+		var suma=n1+n2;		
+		alert("El resultado de la suma es:"+suma);	
+		});
+
+		$("#btnResta").click(function (){
+		var n1=parseInt($("#num1").val());
+		var n2=parseInt($("#num2").val());
+		var resta=n1-n2;		
+		alert("El resultado de la resta es:"+resta);	
+		});
+
+		$("#btnMulti").click(function (){
+		var n1=parseInt($("#num1").val());
+		var n2=parseInt($("#num2").val());
+		var multi=n1*n2;		
+		alert("El resultado de la multiplicación es:"+multi);	
+		});
+
+		$("#btnDiv").click(function (){
+		var n1=parseInt($("#num1").val());
+		var n2=parseInt($("#num2").val());
+		var divicion=n1-n2;		
+		alert("El resultado de la divicion es:"+resta);	
+		});
+
+	});
+	
+</script>
+</head>
+	<body bgcolor="#EEEEEE">
+		<div data-role="page" id="Principal">
+		<div data-role="header">
+			<p>Principal</p>
+		</div>	
+		<div data-role="content">
+			<p>Contenido de la aplicación</p>
+			<a href="#Contacto" data-role="button" data-icon="check" data-transition="flip">Clic para redireccionar</a>
+			<a href="#Contacto" data-role="button" data-icon="check" data-transition="slideup">Clic para redireccionar</a>
+			<a href="#Contacto" data-role="button" data-icon="check" data-transition="slidedown">Clic para redireccionar</a>
+			<a href="#Contacto" data-role="button" data-icon="check" data-transition="pop">Clic para redireccionar</a>
+			<a href="#Suma" data-role="button" data-icon="plus" data-transition="fade" data-theme="b">Sumar</a>
+			<a href="#Resta" data-role="button" data-icon="minus" data-transition="slidefade" data-theme="b">Restar</a>
+			<a href="#Producto" data-role="button" data-icon="delete" data-transition="slidefade" data-theme="b">Producto</a>
+			<a href="#Cociente" data-role="button" data-icon="check" data-transition="slidefade" data-theme="b">Cociente</a>
+			
+			
+		</div>
+		<div data-role="footer">
+			<p>pie de la aplicación</p>
+		</div>
+</div>
+<div data-role="page" id="Contacto">
+		<div data-role="header">
+			<p>Contacto</p>
+		</div>	
+		<div data-role="content">
+			<p>Gerardo Medellín Vázquez</p>
+			<p>mede01@live.com.mx</p>
+			<a href="#Contacto" data-direction="reverse" href="Principal">Volver</a>
+		</div>
+		<div data-role="footer">
+			<p>pie de la aplicación</p>
+		</div>
+</div>
+<div data-role="page" id="Suma">
+		<div data-role="header">
+			<p>Operación Suma</p>
+		</div>	
+		<div data-role="content">
+			<input type="text" id="num1" placeholder="Escribe un número" >			
+			<input type="text" id="num2" placeholder="Escribe un número" >			
+			<input type="button" id="btnSumar" value="calcular suma">
+		</div>
+		<div data-role="footer">
+			<p>pie de la aplicación</p>
+		</div>
+</div>
+<div data-role="page" id="Resta">
+		<div data-role="header">
+			<p>Operación Resta</p>
+		</div>	
+		<div data-role="content">
+			<input type="text" id="num1" placeholder="Escribe un número" >
+			<input type="text" id="num2" placeholder="Escribe un número" >
+			<input type="button" id="btnResta" value="calcular resta">
+		</div>
+		<div data-role="footer">
+			<p>pie de la aplicación</p>
+		</div>
+</div>
+<div data-role="page" id="Producto">
+		<div data-role="header">
+			<p>Operación Suma</p>
+		</div>	
+		<div data-role="content">
+			<input type="text" id="num1" placeholder="Escribe un número" >
+			<input type="text" id="num2" placeholder="Escribe un número" >
+			<input type="button" id="btnMulti" value="calcular producto">
+		</div>
+		<div data-role="footer">
+			<p>pie de la aplicación</p>
+		</div>
+</div>
+<div data-role="page" id="Cociente">
+		<div data-role="header">
+			<p>Operación Suma</p>
+		</div>	
+		<div data-role="content">
+			<input type="text" id="num1" placeholder="Escribe un número" >
+			<input type="text" id="num2" placeholder="Escribe un número" >
+			<input type="button" id="btnDiv" value="calcular cociente">
+		</div>
+		<div data-role="footer">
+			<p>pie de la aplicación</p>
+		</div>
+</div>
+</body>
+</html>
